@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  redis:
+    container_name: redis
+    image: redis:alpine
+    restart: unless-stopped
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 6379:6379
+    volumes:
+      - ./data:/data
+    network_mode: bridge

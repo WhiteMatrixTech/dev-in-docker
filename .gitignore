@@ -1,0 +1,24 @@
+demo/
+# compiled output
+dist/
+node_modules/
+package-lock.json
+
+# Logs
+logs
+*.log
+*.log*
+
+# OS
+.DS_Store
+
+# Tests
+coverage/
+.nyc_output/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
