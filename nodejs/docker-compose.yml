@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  node_16:
+    image: node:16-alpine
+    container_name: node_16
+    command: sleep infinity
