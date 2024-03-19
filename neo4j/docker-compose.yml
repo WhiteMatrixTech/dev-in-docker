@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  neo4j:
+    image: neo4j:5.13.0-community
+    volumes:
+      - ./import:/var/lib/neo4j/import
+      - ./plugins:/plugins
+      - ./data:/data
+      - ./logs:/logs
+      - ./conf:/var/lib/neo4j/conf
+    restart: unless-stopped
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/neo4j123456 #修改默认用户密码，这里的密码在neo4j:5.9.0需要较长的密码要求，不然启动不成功
+

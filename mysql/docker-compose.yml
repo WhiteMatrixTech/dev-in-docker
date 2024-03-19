@@ -12,7 +12,7 @@ services:
       --collation-server=utf8mb4_general_ci
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: root # root用户的密码
+      MYSQL_ROOT_PASSWORD: 123456 # root用户的密码
       # MYSQL_USER: user # 创建新用户
       # MYSQL_PASSWORD: user_password # 新用户的密码
     ports:
