@@ -1,0 +1,6 @@
+# Docker
+data/
+logs/
+conf/
+import/
+plugins/
