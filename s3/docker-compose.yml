@@ -9,8 +9,8 @@ services:
       - DEFAULT_REGION=eu-west-2
       - DATA_DIR=/tmp/localstack/data
     ports:
-      - "5002:5002"
-      - "9999:8080"
+      - "127.0.0.1:5002:5002"
+      - "127.0.0.1:9999:8080"
     volumes:
       - localstack-data:/tmp/localstack
 volumes:
