@@ -16,7 +16,7 @@ services:
       # MYSQL_USER: user # 创建新用户
       # MYSQL_PASSWORD: user_password # 新用户的密码
     ports:
-      - 3306:3306
+      - "127.0.0.1:3306:3306"
     volumes:
       - ./data:/var/lib/mysql
       - ./conf:/etc/mysql/conf.d
